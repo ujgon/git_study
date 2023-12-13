@@ -27,6 +27,7 @@ public class PostController {
         HttpSession session = request.getSession();
         //1. 현재 로그인한 사람의 정보 갖고오기 = 글쓴이
         Member member = (Member)session.getAttribute("Member");
+        //2. 로그인한 사용자 정보와 작성한 글 정보를 service에 보내기
         postService.write(postRequestDto, member.getId());
         return "글 작성 완료";
     }
