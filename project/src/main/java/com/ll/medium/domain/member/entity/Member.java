@@ -1,4 +1,4 @@
-package com.ll.medium.domain.Member.entity;
+package com.ll.medium.domain.member.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

@@ -1,13 +1,11 @@
-package com.ll.medium.domain.Member.controller;
+package com.ll.medium.domain.member.controller;
 
-import com.ll.medium.domain.Member.dto.JoinRequestDto;
-import com.ll.medium.domain.Member.entity.Member;
-import com.ll.medium.domain.Member.service.MemberService;
+import com.ll.medium.domain.member.dto.JoinRequestDto;
+import com.ll.medium.domain.member.entity.Member;
+import com.ll.medium.domain.member.service.MemberService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
