@@ -5,7 +5,7 @@ k = [0] * n
 for i in range(n):
     k[i] = int(input())
 
-d = [10001] * (m*1)
+d = [10001] * (m+1)
 
 d[0] = 0
 
@@ -13,14 +13,9 @@ result = 0
 
 for i in range(n):
     for j in range(k[i], m+1):
-
-
-
-for i in range(2, m+1):
-
-    for j in range(n):
-        if i%k[j] == 0:
-            d[i] = min(d[i], d[i//k[j]]+1)
+        print("j :", j)
+        if d[j - k[i]] != 10001:
+            d[j] = min(d[j], d[j-k[i]]+1)
 
 
 if d[m] == 10001:
