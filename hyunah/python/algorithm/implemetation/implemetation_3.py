@@ -16,6 +16,3 @@ for step in steps:
         result += 1
 
 print(result)
-
-
-

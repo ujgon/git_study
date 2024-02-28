@@ -1,3 +1,15 @@
-print(25//7)
+import time
 
-# 나눌 수 - (몫*나누는 수) = 나누는 수가 딱 떨어지게 하는 수
+array = [i for i in range(100000000)]
+
+start = time.time()
+array[::-1]
+end = time.time()
+
+print("[::-1] 소요 시간 :", end-start)
+
+start = time.time()
+reversed(array)
+end = time.time()
+
+print("reversed() 소요 시간 :", end-start)
