@@ -1,15 +1,3 @@
-import time
+arr = [4,3,2,1]
 
-array = [i for i in range(100000000)]
-
-start = time.time()
-array[::-1]
-end = time.time()
-
-print("[::-1] 소요 시간 :", end-start)
-
-start = time.time()
-reversed(array)
-end = time.time()
-
-print("reversed() 소요 시간 :", end-start)
+print arr.remove(min(arr)) if len(arr) != 1 else print([-1])
