@@ -8,6 +8,7 @@
 # 그리고 한번 처리된 노드의 최단 거리 값은 고정되어 더이상 바뀌지 않는다.
 
 import sys
+
 input = sys.stdin.readline
 INF = int(1e9) # 무한을 의미하는 값으로 10억을 설정
 
