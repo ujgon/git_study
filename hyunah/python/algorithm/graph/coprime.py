@@ -16,6 +16,7 @@ def find_parent(parent, x):
     # 루트 노드가 아니라면 루트 노드를 찾을 때까지 재귀적으로 호출
     if parent[x] != x:
         return find_parent(parent, parent[x])
+    # 부모의 값이 루트와 동일해지도록 반복
     return x
 
 def union_parent(parent, a, b):
@@ -50,8 +51,3 @@ for i in range(1, v+1):
 print('부모 테이블 : ', end = ' ')
 for i in range(1, v+1):
     print(parent[i], end = ' ')
-
-
-
-
-
