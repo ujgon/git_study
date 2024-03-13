@@ -1,6 +1,9 @@
-n=int(input())
+n = 5
 
-for i in range(n-1):
-    print(' '*(n-i-1)+'*'+' '*(2*i-1)+'*'*(i and 1))
-    
-print('*'*(2*n-1))
+def fibo(x):
+    if x == 1 or x == 2:
+        return 1
+    else:
+        return fibo(x-1) + fibo(x-2)
+
+print(fibo(4))
