@@ -1,9 +1,15 @@
-n = 5
+n = int(input())
 
-def fibo(x):
-    if x == 1 or x == 2:
-        return 1
-    else:
-        return fibo(x-1) + fibo(x-2)
+for i in range(n):
+    m = int(input())
 
-print(fibo(4))
+    d = [0] * (10*m+1)
+
+    d[1] = 1
+    d[2] = 2
+    d[3] = 4
+
+    for i in range(4, m+1):
+        d[i] = d[i-1] + d[i-2] + d[i-3]
+
+    print(d[m])
