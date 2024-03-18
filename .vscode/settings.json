@@ -1,3 +1,5 @@
 {
-    "java.compile.nullAnalysis.mode": "automatic"
+    "java.compile.nullAnalysis.mode": "automatic",
+    "terminal.integrated.bellDuration": 1000000,
+    "terminal.integrated.scrollback": 1000000
 }
