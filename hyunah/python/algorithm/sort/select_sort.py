@@ -13,3 +13,5 @@ for i in range(len(array)):
     array[i], array[min_index] = array[min_index], array[i]
 
 print(array)
+
+
